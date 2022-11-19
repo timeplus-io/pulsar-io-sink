@@ -1,5 +1,7 @@
 # Pulsar Sink Connector for Timeplus
 
+[![Validation](https://github.com/timeplus-io/pulsar-io-sink/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/timeplus-io/pulsar-io-sink/actions/workflows/validate.yml)
+
 Note: this connector is currently on technical preview stage, it might not be optimized and is subject to change.
 
 This connector helps you route your data in [Apache Pulsar](https://pulsar.apache.org) topics to [Timeplus](https://timeplus.com) to anaylize your data in real-time while you are streaming your data to your Pulsar topics.
