@@ -1,0 +1,23 @@
+name: Validation
+on:
+  push:
+    tags:
+      - v*
+    branches:
+      - develop
+  pull_request:
+  workflow_call:
+jobs:
+  validation:
+    name: Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 11
+          cache: 'maven'
+      - name: verify
+        run: |
+          mvn -B verify
